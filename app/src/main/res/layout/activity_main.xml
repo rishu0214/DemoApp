@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Bar: Back + Title + Support -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="8">
+
+            <!-- Back Arrow -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pit"
+                android:layout_marginEnd="40dp">
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:contentDescription="Back" />
+
+            <!-- Page Title -->
+            <TextView
+                android:id="@+id/profileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingStart="8dp"
+                android:layout_marginRight="130dp"/>
+            </LinearLayout>
+
+            <!-- Support Button -->
+            <TextView
+                android:id="@+id/supportButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border"
+                android:drawableStart="@drawable/baseline_chat_24"
+                android:drawablePadding="8dp"
+                android:padding="9dp"
+                android:text="support"
+                android:textColor="#6E6E6E"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Profile Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll3"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Profile Image -->
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/baseline_account_circle_24"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="70dp">
+
+                <!-- User Name -->
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="andaz Kumar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Member Since -->
+                <TextView
+                    android:id="@+id/memberSince"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="member since Dec, 2020"
+                    android:textColor="#AAAAAA"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/editImage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/circle"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/promoBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@drawable/rounded_dark_box"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical">
+
+            <!-- Promo Image -->
+            <ImageView
+                android:id="@+id/promoImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/baseline_directions_car_24"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Promo Image" />
+
+            <!-- Promo Text -->
+            <TextView
+                android:id="@+id/promoText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="get to know your vehicles, inside out\nCRED garage →"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <!-- Credit Score -->
+        <!-- Credit Score -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/dashboard"
+                android:contentDescription="Credit Score Icon"
+                android:layout_marginEnd="12dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll1"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/creditScore1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="credit score "
+                android:textColor="#ffFFff"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/creditScore2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• REFRESH AVAILABLE                  "
+                android:textColor="#00FF00"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/creditScore3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="757"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#333333" />
+
+
+        <!-- Lifetime Cashback -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll2"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/moneybackguarantee"
+                android:contentDescription="Cashback Icon"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/lifetimeCashback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="lifetime cashback                                                   ₹3 →"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#333333" />
+
+        <!-- Bank Balance -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll4"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/moneybag"
+                android:contentDescription="Bank Balance Icon"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/bankBalance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="bank balance                                                     check →"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <!-- Rewards Title -->
+        <TextView
+            android:id="@+id/rewardsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR REWARDS &amp; BENEFITS"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginTop="24dp" />
+
+        <!-- Cashback Balance -->
+        <TextView
+            android:id="@+id/cashbackBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cashback balance                                                               →\n₹0"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#333333" />
+
+
+        <!-- Coins -->
+        <TextView
+            android:id="@+id/coins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="coins                                                                                      →\n26,46,583 "
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#333333" />
+
+        <!-- Refer and Earn -->
+        <TextView
+            android:id="@+id/referAndEarn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="win upto Rs 1000                                                                →\nrefer and earn "
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Transactions Section -->
+        <TextView
+            android:id="@+id/transactionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRANSACTIONS &amp; SUPPORT"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/allTransactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="all transactions                                                                    →"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
